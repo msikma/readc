@@ -1,4 +1,4 @@
-### readc
+## `readc`
 
 Reads a single character from stdin and outputs its numeric code, with a timeout that exits the program if it is reached. The timeout value is mandatory and must be passed as milliseconds.
 
@@ -12,6 +12,6 @@ This will read from stdin for 1500 milliseconds; if a character is received, the
 
 The program uses `ncurses` to read input, and clears the screen while polling input. If the program is used in a subcommand this is avoided.
 
-### License
+## License
 
 MIT license
