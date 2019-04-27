@@ -1,0 +1,8 @@
+[package]
+name = "readc"
+version = "0.1.0"
+authors = ["Michiel Sikma <michiel@sikma.org>"]
+edition = "2018"
+
+[dependencies]
+ncurses = "5.86.0"
