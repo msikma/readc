@@ -15,7 +15,7 @@ This will read from stdin for 1500 milliseconds; if a character is received, the
 The program uses `ncurses` to read input, and clears the screen while polling input. If the program is used in a subcommand this is avoided; but the output will still contain extra escape sequences. This is why the output is wrapped in underscores, so that it can easily be separated from the rest, e.g. this way, using *enter* as the test key:
 
 ```bash
-$ a=`./target/release/readc 1500 | grep -o '_\([0-9]\+\)_'`
+$ a=`./target/release/readc 1500 | grep -o '_-\?[0-9]\+_'`
 $ echo "The result is: $a"
 The result is: _10_
 ```
