@@ -59,5 +59,5 @@ fn main() {
   
   // Terminate ncurses and print our character if we have it (or -1).
   endwin();
-  print!("{}", chr);
+  print!("_{}_", chr);
 }
